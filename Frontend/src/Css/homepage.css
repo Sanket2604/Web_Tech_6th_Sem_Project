@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap');
+.home{
+    position: relative;
+    height: 100vh;
+}
+.home video{
+    position: absolute; 
+    top: 0px;
+    left: -1px;
+    height: 860px;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+}
+.home .content_cont1{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: rgba(222,23,56, 0.69);
+    border: 2px solid hsl(350, 91%, 48%);
+    border-left: 0px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.home .content_cont2{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    width: 35%;
+    background-color: rgba(222,23,56, 0.69);
+    border-top-left-radius: 10px;
+    text-align: center;
+    border: 2px solid hsl(350, 91%, 48%);
+    border-right: 0px;
+    padding: 10px;
+}
+.home .content_cont2 .quotes{
+    font-size: 80px;
+    width: fit-content;
+    font-family: 'Catamaran', sans-serif;
+    transform: translateY(-15px) rotateY(180deg);
+}
+
+.home .content_cont2 .quotes1{
+    float: right;
+    font-size: 80px;
+    font-family: 'Catamaran', sans-serif;
+    transform: translateY(65px);
+}

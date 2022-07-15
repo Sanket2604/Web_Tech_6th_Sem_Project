@@ -1,0 +1,133 @@
+.dish_detail{
+    padding-top: 80px;
+    background:  url(../images/dish_detail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.dish_detail .food_heading{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+.dish_detail .render_card{
+    padding: 0 10vw;
+}
+.dish_detail .render_card .heading{
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.dish_detail .render_card .card{
+    background-color: rgba(255, 255, 255, 0.69);
+    border: 0!important;
+    outline: 0!important;
+}
+.dish_detail .render_card .card-text{
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+.dish_detail .comments_section{
+    padding: 80px 10vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.dish_detail .comments_section .white_back{
+    padding: 20px 0;
+}
+.dish_detail .comments_section .comment_cont{
+    margin: 20px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 0, 55, 0.3);
+    border-radius: 10px;
+    width: fit-content;
+    border: 2px solid white;
+}
+.dish_detail .comments_section .comment_cont img{
+    height: 60px;
+    width: 60px;
+    max-height: 60px;
+    min-width: 60px;
+    background-color: black;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.dish_detail .comments_section .comment_cont .top_line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.dish_detail .comments_section .comment_cont .top_line .name{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.dish_detail .comments_section .comment_cont .top_line .date{
+    font-size: 16px;
+    margin-right: 20px;
+    color: rgb(226, 226, 226);
+}
+.dish_detail .comments_section .comment_cont .bottom_line{
+    display: flex;
+}
+.dish_detail .comments_section .comment_cont .bottom_line .cmt{
+    font-size: 16px;
+    text-align: justify;
+    margin-right: 30px;
+}
+.dish_detail .comments_section .comment_cont .bottom_line .rating{
+    font-size: 16px;
+    min-width: 150px;
+}
+.dish_detail .comments_section .sub_btn_cont{
+    display: flex;
+    justify-content: center;
+}
+.dish_detail .comments_section .sub_btn_cont .submit_btn{
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: 3px solid white;
+    background-color: rgb(201, 28, 28);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.dish_detail .comments_section .sub_btn_cont .submit_btn:hover{
+    color: rgb(201, 28, 28);
+    border: 3px solid rgb(201, 28, 28);
+    background-color: white;
+    transform: translateY(-10px);
+}
+.cmt_btn_cont{
+    display: flex;
+    justify-content: center;
+}
+.cmt_btn_cont .cmt_btn{
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 7px 30px;
+    border-radius: 40px;
+    border: 2px solid rgb(201, 28, 28);
+    background-color: white;
+    color: rgb(201, 28, 28);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.cmt_btn_cont .cmt_btn:hover{
+    background-color: rgb(201, 28, 28);
+    border: 2px solid white;
+    color: white;
+}

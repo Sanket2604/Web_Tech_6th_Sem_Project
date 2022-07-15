@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ffe6e8;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(199, 0, 43);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 0, 55);
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none!important;
+    color: inherit;
+}
+.row-header{
+    margin:0px auto;
+    padding:0px auto;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+.navbar {
+    background-color: #cb202ed8;
+    color: black!important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transition: 0.5s ease-in !important;
+}
+.navbar:hover{
+    background-color: #cb202e;
+}
+.navbar .nav-item{
+    margin-left: 20px;
+    overflow: hidden;
+}
+.navbar .nav-item:hover .nav-link{
+    color: white!important;
+}
+
+.navbar .nav-item .line{
+    background-color: white;
+    height: 2px;
+    transform: translateX(110%);
+    transition: 0.75s ease-in-out;
+}
+.navbar .nav-item:hover .line{
+    transform: translateX(0%);
+}
+.page-enter {
+    opacity: 0.01;
+    transform: translateX(-100%);
+}
+.nav-link{
+    color: black!important;
+    transition: 0.5s ease-in-out;
+}
+.page-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in;
+}
+
+.page-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.page-exit-active {
+    opacity: 0.01;
+    transform: translateX(100%);
+    transition: all 0.5s ease-out;
+}

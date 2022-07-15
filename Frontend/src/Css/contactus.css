@@ -1,0 +1,310 @@
+.contactus{
+    padding: 80px 5vw;
+    background-image: url(../images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contactus .section1 .heading .big{
+    font-size: 28px;
+}
+.contactus .section1 .heading .big:hover .line{
+    width: 100%;
+}
+.contactus .section{
+    background-color: rgba(226, 226, 226, 0.5);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+.contactus .section1{
+    padding-top: 50px;
+}
+.contactus label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.contactus label.check{
+    font-size: 18px;
+    font-weight: 400;
+}
+.contactus .section2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactus .section2 .heading .big{
+    font-size: 32px;
+    font-weight: 600;
+}
+.contactus .section2 .contact_us .reach{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.contactus .section2 .contact_us .reach.user{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contactus .section2 .contact_us span{
+    margin-right: 10px;
+    font-size: 24px;
+}
+.socialcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;  
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.5s ease-in-out;
+}
+.social-icons a .fab, 
+.social-icons a .far, 
+.social-icons a .fas{
+    line-height: 45px;
+}
+.social-icons .mob{
+    color: black;
+    animation-name: mob;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+@keyframes mob{
+    0%{
+        color: black;
+        background-color: transparent;
+        transform: translateY(0px) scale(1);
+    }
+    10%{
+        background: black;
+        color: white;
+        transform: translateY(-10px) scale(1.1);
+    }
+    20%{
+        color: black;
+        background-color: transparent;
+        transform: translateY(0px) scale(1);
+    }
+}
+.social-icons .mob:hover{
+    background: black;
+    color: white;
+    transform: translateY(-10px) scale(1.1);
+}
+.social-icons .loc{
+    color: rgb(255, 51, 0);
+    transition-timing-function: none;
+    animation-name: loc;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+@keyframes loc{
+    20%{
+        color: rgb(255, 51, 0);
+        background-color: transparent;
+        transform: translateY(0px) scale(1);
+    }
+    30%{
+        background-color: rgb(255, 51, 0);
+        color: white;
+        transform: translateY(-10px) scale(1.1);
+    }
+    40%{
+        color: rgb(255, 51, 0);
+        background-color: transparent;
+        transform: translateY(0px) scale(1);
+    }
+}
+.social-icons .loc:hover{
+    background: rgb(255, 51, 0);
+    color: white;
+    transform: translateY(-10px) scale(1.1);
+}
+.social-icons .mail{
+    color: #c71610;
+    animation-name: mail;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+@keyframes mail{
+    40%{
+        color: #c71610;
+        background-color: transparent;
+        transform: translateY(0px) scale(1);
+    }
+    50%{
+        background-color: #c71610;
+        transform: translateY(-10px) scale(1.1);
+        color: white;
+    }
+    60%{
+        color: #c71610;
+        background-color: transparent;
+        transform: translateY(0px) scale(1);
+    }
+}
+.social-icons .mail:hover {
+    background: #c71610;
+    color: white;
+    transform: translateY(-10px) scale(1.1);
+}
+.social-icons .fb{
+    color: #4267B2;
+    animation-name: fb;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+@keyframes fb{
+    60%{
+        color: #4267B2;
+        background-color: transparent;
+        transform: translateY(0px) scale(1);
+    }
+    70%{
+        background-color: #4267B2;
+        transform: translateY(-10px) scale(1.1);
+        color: white;
+    }
+    80%{
+        color: #4267B2;
+        background-color: transparent;
+        transform: translateY(0px) scale(1);
+    }
+}
+.social-icons .fb:hover {
+    background: #4267B2;
+    color: white;
+    transform: translateY(-10px) scale(1.1);
+}
+.social-icons .link{
+    color: #060057;
+    animation-name: link;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+@keyframes link{
+    80%{
+        transform: translateY(0px) scale(1);
+        color: #060057;
+        background-color: transparent;
+    }
+    90%{
+        transform: translateY(-10px) scale(1.1);
+        background-color: #060057;
+        color: white;
+    }
+    100%{
+        color: #060057;
+        background-color: transparent;
+        transform: translateY(0px) scale(1);
+    }
+}
+.social-icons .link:hover {
+    background: #060057;
+    color: white;
+    transform: translateY(-10px) scale(1.1);
+}
+.socialcontainer:hover .social-icons .mob,
+.socialcontainer:hover .social-icons .loc,
+.socialcontainer:hover .social-icons .mail,
+.socialcontainer:hover .social-icons .fb,
+.socialcontainer:hover .social-icons .link{
+    animation-name: none;
+}
+
+.contactus .submit_cont{
+    display: flex;
+    justify-content: center;
+}
+.contactus .submit_cont .submit_btn{
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    color: white;
+    border: 3px solid white;
+    background-color: rgb(201, 28, 28)!important;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.contactus .submit_cont .submit_btn:hover{
+    color: rgb(201, 28, 28)!important;
+    border: 2px solid rgb(201, 28, 28)!important;
+    background-color: white!important   ;
+    transform: translateY(-10px);
+}
+
+@media only screen and (max-width:1075px){
+
+    .contactus .section1 .heading .big{
+        font-size: 28px;
+    }
+    .contactus .section2 .heading .big{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    }
+
+@media only screen and (max-width:1075px){
+    
+    .contactus .section2 .section2_cont{
+        border-left: none;
+        padding-left: 0px;
+    }
+}
+@media only screen and (max-width:550px){
+
+    
+    .contactus .submit_cont .submit{
+        font-size: 18px;
+    }
+    .contactus .section1 .heading .big{
+        font-size: 24px;
+    }
+    .contactus .section2 .heading .big{
+        font-size: 18px;
+    }
+    .contactus .section2 .contact_us .reach{
+        font-size: 16px;
+    }
+    .contactus .section2 .contact_us span{
+        font-size: 18px;
+    }
+}

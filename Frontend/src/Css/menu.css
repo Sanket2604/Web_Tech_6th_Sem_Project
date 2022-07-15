@@ -1,0 +1,103 @@
+.menu{
+    padding: 0px 10vw;
+    padding-top: 80px;
+}
+.menu h3{
+    text-align: center;
+}
+.menu .card_{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(161, 0, 0, 0.4) 0px 0px 15px;
+}
+.menu .card_ .img_cont{
+    position: relative;
+}
+.menu .card_ .img_cont .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(rgba(255, 0, 55, 0) ,rgba(255, 0, 55, 0.1),rgba(255, 0, 55, 0.5),rgba(255, 0, 55, 0.8));
+    color: white;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s ease-in-out;
+}
+.menu .card_ .img_cont img{
+    transition: 0.5s ease-in-out;
+} 
+.menu .card_ .img_cont:hover img{
+    transform: scale(1.05);
+}
+.menu .card_ .img_cont:hover .overlay{
+    opacity: 1;
+    transform: translateY(0px);
+    cursor: default;
+}
+.menu .card_ .img_cont .overlay .dish_name{
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.15s;
+}
+.menu .card_ .img_cont:hover .overlay .dish_name{
+    font-size: 20px;
+}
+.menu .card_ .img_cont .overlay .label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.69);
+    border: 2px solid #CB202D;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #CB202D;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(-150%);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.menu .card_ .img_cont:hover .overlay .label{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.menu .dish_type{
+    width: fit-content;
+    padding-bottom: 10px;
+    font-weight: 600;
+    position: relative;
+}
+.menu .dish_type::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 3px;
+    background-color: #CB202D;
+    animation: wave 4s ease-in-out infinite forwards;
+}
+@keyframes wave {
+    0%{
+        width: 80%;
+    }
+
+    50%{
+        width: 120%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}

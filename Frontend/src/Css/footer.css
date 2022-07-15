@@ -1,0 +1,193 @@
+.footer{
+    position: relative;
+    background-color: rgb(203, 32, 45);
+    padding: 50px 5vw;
+    padding-bottom: 30px;
+    color: rgb(231, 231, 231);
+    transition: 1s ease-in-out;
+}
+.footer a:hover{
+    color: white;
+}
+.footer:hover{
+    background-color: rgb(201, 18, 33);
+}
+.footer .section .heading{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer .section1 .logo_footer{
+    background-color: rgba(255, 255, 255); 
+    border-radius: 10px;
+    padding: 5px;
+    height: 80px;
+    margin-bottom: 25px;
+}
+.footer .section1 .address,
+.footer .section1 .phone,
+.footer .section1 .email{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.footer .section1 .address span,
+.footer .section1 .phone span,
+.footer .section1 .email span{
+        margin-left: 40px;
+}
+.footer .section1 .icon{
+    font-size: 24px;
+}
+.social-icons_footer a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.5s ease-in-out;
+}
+.social-icons_footer a .fab{
+    line-height: 45px;
+}
+.social-icons_footer .fac{
+    color: rgb(231, 231, 231);
+}
+.social-icons_footer .fac:hover{
+    background: #4267B2;
+    color: rgb(231, 231, 231);
+    transform: translateY(-5px) scale(1.1);
+}
+.social-icons_footer .wht{
+    color: rgb(231, 231, 231);
+}
+.social-icons_footer .wht:hover{
+    background: rgb(0, 158, 47);
+    color: rgb(231, 231, 231);
+    transform: translateY(-5px) scale(1.1);
+}
+.social-icons_footer .linked{
+    color: rgb(231, 231, 231);
+}
+.social-icons_footer .linked:hover{
+    background: #060057;
+    color: rgb(231, 231, 231);
+    transform: translateY(-5px) scale(1.1);
+}
+.footer .section2 ul{
+    list-style: none;
+}
+.footer .section2 ul li{
+    margin-bottom: 20px;
+    transition: 0.5s ease-in-out;
+}
+.footer .section2 ul li:hover{
+    transform: translateX(10px);
+}
+.footer .section2 ul a{
+    color: rgb(231, 231, 231);
+}
+.footer .section3 .loc_box{
+    height: 290px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-image: url(../images/maps.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer .row2{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 4px solid rgb(255, 255, 255);
+}
+.footer .row2 .company_line{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.footer .row2 .company_line span{
+    display: none;
+}
+@media only screen and (max-width:991px){
+    
+    
+    .social-icons_footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .row2 .company_line hide{
+        display: none;
+    }
+    .footer .row2 .company_line .tab{
+        display: block;
+    }
+    .footer .section3 .loc_box{
+        width: 100%;
+    }
+    }
+
+@media only screen and (max-width:768px){
+    .footer .section2 .box{
+        display: flex;
+    }
+    .footer .section2 .box_1{
+        margin-right: 80px;
+    }
+    }
+@media only screen and (max-width:550px){
+    
+    .footer .section1 img{
+        height: 50px;
+    }
+    .footer .row2 .company_line .mob{
+        display: block;
+    }
+    .social-icons_footer a {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+    .social-icons_footer a .fab, 
+    .social-icons_footer a .far,
+    .social-icons_footer a .fas{
+        line-height: 35px;
+    }
+    .footer .section3 .loc_box{
+        width: 100%;
+    }
+    .footer .section1 .address span,
+    .footer .section1 .phone span,
+    .footer .section1 .email span{
+        margin-left: 25px;
+        font-size: 16px;
+    }
+    .footer .section2 .box{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer .section2 .box_1{
+        margin-right: 0px;
+    }
+    .footer .company_line{
+        font-size: 16px!important;
+    }
+    }
+
+@media only screen and (max-width:340px){
+
+    .footer .section1 .address span,
+    .footer .section1 .phone span,
+    .footer .section1 .email span{
+        margin-left: 15px;
+    }
+    .footer .section1 img{
+        height: 40px;
+    }
+}
