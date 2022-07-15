@@ -1,0 +1,43 @@
+Download Nodejs Recommended for most users and install first 
+Nodejs: https://nodejs.org/en/
+Tutorial: https://www.youtube.com/watch?v=__7eOCxJyow
+
+First execute Backend then Frontend
+
+Execution of Backend: (Make Sure Device is Connected To Internet)
+
+Open backend file
+Open Command prompt or terminal in vscode on the file
+Type: 
+npm install
+json-server --watch db.json -d 2000 -p 3001
+
+Execution of Frontend: (Make Sure Device is Connected To Internet)
+
+Open frontend file
+Open Command prompt or terminal in vscode on the file
+Type: 
+npm install (This process takes a lot of time and depends on net speed)
+npm start
+
+While presenting to Satya make sure you remove this file and to execute frontend and backend just type npm start in terminal.
+Get the backend running first then frontend
+
+Your database is in db.json in backend
+The routes of server is determined by db.json
+Check The terminal
+You will see this:
+ Resources
+  http://localhost:3001/dishes
+  http://localhost:3001/comments
+  http://localhost:3001/leaders
+  http://localhost:3001/feedback
+
+In db.json see lines: 2 - dishes, 284 - comments, 2059 - leaders, 2106 - feedback
+These set the routes the above 4 are array of objects
+
+Frontend uses react. The main code is in src code flows like index.html(in public file) -> index.js -> App.js -> MainComponent (In components file)
+Component file consists of all the routes of the website and links all the components.
+
+This is the best I can explain.... All the best <3
+
